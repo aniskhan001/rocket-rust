@@ -9,10 +9,11 @@ use rocket_contrib::{Json, Value};
 
 mod model;
 use model::{Item};
+use rocket::response::status;
 
 #[post("/", data = "<an_item>")]
-fn create_item(an_item: Json<Item>) -> Json<Item> {
-    an_item
+fn create_item(an_item: Json<Item>) -> status::Created< Json<Item> > {
+    status::Created(format!("/"), Some(an_item))
 }
 
 #[get("/")]
@@ -32,13 +33,13 @@ fn list_item() -> Json<Value> {
 }
 
 #[put("/<_id>", data = "<an_item>")]
-fn update_item(_id: i32, an_item: Json<Item>) -> Json<Item> {
-    an_item
+fn update_item(_id: i32, an_item: Json<Item>) -> status::Created<Json<Item>> {
+    status::Created(format!("/{}", _id), Some(an_item))
 }
 
 #[delete("/<_id>")]
-fn delete_item(_id: i32) -> Json<Value> {
-    Json(json!({"status": "ok"}))
+fn delete_item(_id: i32) -> status::NoContent {
+    status::NoContent
 }
 
 fn main() {
