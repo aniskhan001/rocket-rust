@@ -4,4 +4,4 @@ services:
   rocket:
     build: .
     ports:
-      - 8080:8080
+      - 6666:6666
