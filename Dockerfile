@@ -1,4 +1,4 @@
-FROM liuchong/rustup
+FROM rust:1.28
 
 ENV ROCKET_ADDRESS=0.0.0.0
 ENV ROCKET_PORT=6666
