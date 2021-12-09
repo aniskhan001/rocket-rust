@@ -1,9 +1,6 @@
 name: Rust Build
 
 on:
-  push:
-    branches:
-      - fix/rust-build
   pull_request:
     branches:
       - master
