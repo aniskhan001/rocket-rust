@@ -6,6 +6,8 @@ updates:
     interval: daily
     time: "23:00"
   open-pull-requests-limit: 10
+  labels:
+  - "automerge"
   reviewers:
   - aniskhan001
 - package-ecosystem: cargo
@@ -14,5 +16,7 @@ updates:
     interval: daily
     time: "23:00"
   open-pull-requests-limit: 10
+  labels:
+  - "automerge"
   reviewers:
   - aniskhan001
