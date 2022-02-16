@@ -1168,9 +1168,9 @@ dependencies = [
 
 [[package]]
 name = "mysql"
-version = "22.0.0"
+version = "22.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a32b29b43b185fdbe1b399ef11d9dae9dfc79890d91364338708dea6eeafacc0"
+checksum = "2e6f8658d54e3c294d94a741a5f414c21431f56f253b5dc2e2582941d834b3a9"
 dependencies = [
  "bufstream",
  "bytes",
