@@ -476,9 +476,9 @@ dependencies = [
 
 [[package]]
 name = "diesel"
-version = "2.0.1"
+version = "2.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "36da89704300f3b791425e68b628c852912fb81b3bf0841bfde2c315cb7a7887"
+checksum = "4391a22b19c916e50bec4d6140f29bdda3e3bb187223fe6e3ea0b6e4d1021c04"
 dependencies = [
  "bitflags",
  "byteorder",
@@ -1710,7 +1710,7 @@ dependencies = [
 name = "rust-gem"
 version = "0.1.0"
 dependencies = [
- "diesel 2.0.1",
+ "diesel 2.0.3",
  "mysql",
  "mysqlclient-sys",
  "r2d2",
