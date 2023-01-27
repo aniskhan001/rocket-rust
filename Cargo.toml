@@ -4,7 +4,7 @@ name = "rust-gem"
 version = "0.1.0"
 
 [dependencies]
-diesel = {version = "2.0.1", features = ["mysql"]}
+diesel = {version = "2.0.3", features = ["mysql"]}
 mysql = "23.0.1"
 mysqlclient-sys = "0.2.5"
 r2d2 = "0.8.9"
