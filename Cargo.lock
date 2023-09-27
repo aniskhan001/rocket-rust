@@ -523,13 +523,13 @@ dependencies = [
 
 [[package]]
 name = "diesel"
-version = "2.1.1"
+version = "2.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d98235fdc2f355d330a8244184ab6b4b33c28679c0b4158f63138e51d6cf7e88"
+checksum = "53c8a2cb22327206568569e5a45bb5a2c946455efdd76e24d15b7e82171af95e"
 dependencies = [
  "bitflags 2.3.1",
  "byteorder",
- "diesel_derives 2.1.0",
+ "diesel_derives 2.1.2",
  "mysqlclient-sys",
  "percent-encoding 2.1.0",
  "url 2.2.2",
@@ -548,9 +548,9 @@ dependencies = [
 
 [[package]]
 name = "diesel_derives"
-version = "2.1.0"
+version = "2.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "74398b79d81e52e130d991afeed9c86034bb1b7735f46d2f5bf7deb261d80303"
+checksum = "ef8337737574f55a468005a83499da720f20c65586241ffea339db9ecdfd2b44"
 dependencies = [
  "diesel_table_macro_syntax",
  "proc-macro2 1.0.63",
@@ -1842,7 +1842,7 @@ dependencies = [
 name = "rust-gem"
 version = "0.1.0"
 dependencies = [
- "diesel 2.1.1",
+ "diesel 2.1.2",
  "mysql",
  "mysqlclient-sys",
  "r2d2",
