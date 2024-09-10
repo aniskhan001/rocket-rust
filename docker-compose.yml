@@ -3,10 +3,10 @@ version: '3.3'
 services:
   mysql:
     image: mysql:8.0
-    environment: 
+    environment:
       - MYSQL_ROOT_PASSWORD=boot
       - MYSQL_HOST=127.0.0.1
-    ports: 
+    ports:
       - 3306:3306
 
   rocket:
@@ -17,4 +17,4 @@ services:
     environment:
       - DATABASE_URL=mysql://root:boot@mysql/items
     ports:
-      - 6666:6666
+      - 8088:8088
