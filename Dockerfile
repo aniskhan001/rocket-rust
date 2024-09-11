@@ -6,7 +6,7 @@ ENV ROCKET_PORT=8088
 WORKDIR /app
 COPY . .
 
-RUN rustup default nightly
+RUN rustup default stable
 RUN cargo build
 
 CMD ["cargo", "run"]
