@@ -16,8 +16,5 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4.1.7
 
-    - name: Update to nightly toolchain
-      run: rustup update nightly && rustup default nightly
-
     - name: Build
       run: cargo build --verbose
