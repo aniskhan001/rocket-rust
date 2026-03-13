@@ -6,7 +6,7 @@ edition = "2021"
 
 [dependencies]
 diesel = {version = "2.1.4", features = ["mysql"]}
-mysql = "25.0.0"
+mysql = "27.0.0"
 mysqlclient-sys = "0.4.0"
 r2d2 = "0.8.9"
 r2d2-diesel = "1.0.0"
